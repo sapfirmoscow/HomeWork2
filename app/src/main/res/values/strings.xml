@@ -2,4 +2,6 @@
     <string name="app_name">HomeWork2</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
+    <string name="stop">Stop</string>
+    <string name="output">Output</string>
 </resources>

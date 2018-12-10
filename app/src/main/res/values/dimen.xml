@@ -4,6 +4,7 @@
     <dimen name="layout_marginEnd">8dp</dimen>
     <dimen name="layout_marginStart">8dp</dimen>
     <dimen name="layout_marginTop">8dp</dimen>
-    <dimen name="button_width">8dp</dimen>
-    <dimen name="button_height">8dp</dimen>
+    <dimen name="button_width">200dp</dimen>
+    <dimen name="button_height">100dp</dimen>
+    <dimen name="textSize">64sp</dimen>
 </resources>
