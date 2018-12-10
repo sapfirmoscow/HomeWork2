@@ -40,10 +40,9 @@ public class MyService extends IntentService {
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
 
-        for (int i = 0; i <= 50; i++) {
+        for (int i = 0; i <= 100; i++) {
             if (shoudFinish) {
-                sendToClients(Message.obtain(null, MSG_STOP_SERVICE, null));
-                return;
+                break;
             }
 
             sendToClients(Message.obtain(null, MSG_VALUE, getRandomNumber(100)));
@@ -54,6 +53,7 @@ public class MyService extends IntentService {
             }
 
         }
+        sendToClients(Message.obtain(null, MSG_STOP_SERVICE, null));
     }
 
     private int getRandomNumber(int maxValue) {

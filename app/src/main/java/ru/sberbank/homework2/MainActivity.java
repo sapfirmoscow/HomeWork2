@@ -20,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initListeners() {
-        //кнопка 1
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                MyService.setShoudFinish(false);
                 startService(MyService.newInteent(MainActivity.this));
             }
         });

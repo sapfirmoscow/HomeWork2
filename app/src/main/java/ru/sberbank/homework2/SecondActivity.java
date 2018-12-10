@@ -62,7 +62,6 @@ public class SecondActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         doBindService();
-
     }
 
     @Override
